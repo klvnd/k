@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>✨ Klvnd ✨</title>
+    <link rel="stylesheet" href="./src/style/global.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#aboutMe-section">About</a>
+        <a href="#awards-section">Awards</a>
+        <a href="#Project-section">Project</a>
+        <a href="javascript:void(0);" class="icon" onclick="showMobileNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    
+    <div class="container">
+        <div class="Profile" >
+            <img class="imgProfile" src= "src/assets/images/me.jpg" alt="Profile Picture" width="200" height="200">
+        </div>
+        <div class="descProfile">
+            <p>👋 Hello, my name is </p>
+            <h1>Kelvin Dwipangga</h1>
+            <p>| Mobile & Web Dev |</p>
+            <p> Curently learning about Kotlin </p>
+            <p>Malang, Indonesia</p>
+        </div>
+        <div>
+            <button class="btn" onclick="showPopup('babypack')">Download CV</button>
+            <a href="#contact-section"><button class="btn">Contact Me</button></a>
+        </div>
+        <p>👇 Follow Me 👇</p>
+        <div class="socialMedia">
+            <a href="https://www.linkedin.com/in/klvnd" target="_blank"><i class="fa-brands fa-linkedin" style="font-size: 30px;"></i></a>
+            <a href="https://www.instagram.com/klvnnd" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 30px;"></i></a>
+            <a href="https://github.com/klvnd" target="_blank"><i class="fa-brands fa-github" style="font-size: 30px;"></i></icon></a>
+        </div>
+    </div>
+
+    <section class="aboutMe" id="aboutMe-section">
+        <div class="container">
+            <h1>About Me</h1>
+            <p class="descAbout">An Information Technology student at Brawijaya University's Vocational. I'm passionate about Mobile and Front-end Development, actively participating in organizations, competitions, and communities to enhance my skills. I'm seeking opportunities to apply my knowledge in a challenging environment.</p>
+        </div>
+    </section>
+
+    <section class="eduBg">
+        <div class="container">
+            <h1>Educational background</h1>
+        </div>
+        <div class="container">
+            <div class="eduCard">
+                <img src="src/assets/images/bangkit.jpg" alt="Brawijaya University" width="80" height="80">
+                <div class="eduContent">
+                    <h2>Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</h2>
+                    <p>Mobile Development Cohort Batch 1 2024</p>
+                    <p>Feb 2024 - Jul 2024</p>
+                </div>
+            </div>
+            <div class="eduCard">
+                <img src="src/assets/images/ub.jpeg" alt="Bangkit Academy" width="80" height="80">
+                <div class="eduContent">
+                    <h2>Brawijaya University</h2>
+                    <p>Information Technology</p>
+                    <p>Aug 2022 - Present</p>
+                    <p>Activities and societies:</p>
+                    <div class="societies">
+                        <img src="src/assets/images/gdscub.webp" alt="gdscUB" width="40" height="40">
+                        <img src="src/assets/images/hmpsti.jpeg" alt="HMPSTI vokasi UB" width="40" height="40">
+                        <img src="src/assets/images/provoks.png" alt="PROVOKS" width="40" height="40">
+                    </div>
+                </div>
+            </div>
+            <div class="eduCard">
+                <img src="src/assets/images/smaplus.jpg" alt="SMA PLUS PGRI CIBINONG" width="80" height="80">
+                <div class="eduContent">
+                    <h2>SMA PLUS PGRI Cibinong</h2>
+                    <p>Science</p>
+                    <p>Juli 2019 - Mei 2022</p>
+                    <p>Activities and societies:</p>
+                    <div class="societies">
+                        <img src="src/assets/images/kopasusit.webp" alt="kopasusit" width="40" height="40">
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+
+    <div class="container" id="awards-section">
+        <h1>Awards Certtificate</h1>
+        <div class="card-container">
+            <div class="card">
+                <img src="src/assets/images/sertif2024.jpg" alt="Sertif2024" class="card-image">
+            </div>
+            <div class="card">
+                <img src="src/assets/images/sertif2023.jpg" alt="Sertif20223" class="card-image">
+            </div>
+            <div class="card"></div>
+                <img src="src/assets/images/sertf-bangkit.png" alt="Sertifbangkit" class="card-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="Project-section">
+        <h1>Project</h1>
+        <div class="project">
+            <a href="https://github.com/Warna-Ku/Warnaku-App" target="_blank">
+                <img src="src/assets/images/warnaku-app-project.png" alt="warnaku-app-project" class="card-image">
+            </a>
+            <a href="https://github.com/klvnd/StoryApp" target="_blank">
+                <img src="src/assets/images/story-app-project.png" alt="story-app-project" class="card-image">
+            </a>
+            <a href="https://github.com/klvnd/GithubUserV10" target="_blank">
+                <img src="src/assets/images/githubuser-app-project.png" alt="githubuser-app-project" class="card-image">
+            </a>
+            <a href="https://github.com/klvnd/CancerDetectionAI" target="_blank">
+                <img src="src/assets/images/cancerdetectai-app-project.png" alt="cancerdetectai-app-project" class="card-image">
+            </a>
+            <a href="https://github.com/klvnd/WanderlustIndo" target="_blank">
+                <img src="src/assets/images/wanderlust-app-project.png" alt="wanderlust-app-project" class="card-image">
+            </a>
+            <a href="https://github.com/klvnd/ngekost_app" target="_blank">
+                <img src="src/assets/images/ngekost-app-project.png" alt="ngekost-app-project" class="card-image">
+            </a>
+            <a href="https://github.com/klvnd/PBL-web-MBKM-Arsip" target="_blank">
+                <img src="src/assets/images/mbkm-arsip-web-project.png" alt="mbkm-arsip-web-project" class="card-image">
+            </a>
+            <a href="https://github.com/klvnd/UAS-FE" target="_blank">
+                <img src="src/assets/images/mobil-listrik-web-project.png" alt="mobil-listrik-web-project" class="card-image">
+            </a>
+            <a href="https://github.com/mortomulu/agromerce" target="_blank">
+                <img src="src/assets/images/agromerce-web-project.png" alt="agromerce-web-project" class="card-image">
+            </a>
+            <a href="https://github.com/klvnd/hama-detector-yolov5-YOLOIN" target="_blank">
+                <img src="src/assets/images/smart-systems-antisipasi-hama.png" alt="smart-systems-antisipasi-hama" class="card-image">
+            </a>
+        </div>
+    </div>
+
+    <section class="contact" id="contact-section">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Feel free to contact me for any inquiries or collaborations.</p>
+            <div class="contact-info">
+                <a href="mailto:klvinnd@student.ub.ac.id?subject=Hello%20There&body=Let's%20Talk." target="_blank" class="btn">
+                    <i class="fa-solid fa-envelope"></i>
+                    klvinnd@student.ub.ac.id
+                </a>
+                <a href="https://www.linkedin.com/in/klvnd/" target="_blank" class="btn">
+                    <i class="fa-brands fa-linkedin"></i>
+                    linkedin.com/in/klvnd/
+                </a>
+                <a href="https://wa.me/6285155215439?text=Hello%20there,%20let's%20talk!" target="_blank" class="btn">
+                    <i class="fa-solid fa-phone"></i>
+                    +62 851-5521-5439
+                </a>                
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Kelvin Dwipangga. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
