@@ -159,9 +159,6 @@ nav .icon {
     color: var(--light);
 }
 
-
-
-
 .eduCard img {
     margin-right: 20px;
     border-radius: 20px;
@@ -235,6 +232,16 @@ nav .icon {
     flex-direction: column; /* Mengatur elemen menjadi vertikal */
     align-items: flex-start; /* Mengatur elemen agar rata kiri */
     gap: 10px; 
+}
+
+#container3D canvas {
+    margin-top: 20px;
+    width: 50vw !important;
+    height: 40vh !important;
+    position: relative;
+    top: 0;
+    left: 0;
+    object-fit: contain; /* Ensure the image maintains its aspect ratio */
 }
 
 footer {
