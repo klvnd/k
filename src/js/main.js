@@ -5,6 +5,8 @@ import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/js
 // To allow for importing the .gltf file
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 
+import {DRACOLoader} from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/DRACOLoader.js";
+
 // Create a Three.JS Scene
 const scene = new THREE.Scene();
 // Create a new camera with positions and angles
@@ -24,7 +26,7 @@ const loader = new GLTFLoader();
 
 // Load the file
 loader.load(
-  `src/models/${objToRender}/scene.gltf`,
+  `src/models/${objToRender}/scene2.gltf`,
   function (gltf) {
     // If the file is loaded, add it to the scene
     object = gltf.scene;
@@ -44,12 +46,17 @@ loader.load(
 const renderer = new THREE.WebGLRenderer({ alpha: true }); // Alpha: true allows for the transparent background
 renderer.setSize(window.innerWidth, window.innerHeight);
 
+const dLoader = new DRACOLoader();
+dLoader.setDecoderPath('https://www.gstatic.com/draco/versioned/decoders/1.5.7/');
+dLoader.setDecoderConfig({ type: 'js' });
+loader.setDRACOLoader(dLoader);
+
 // Add the renderer to the DOM
 document.getElementById("container3D").appendChild(renderer.domElement);
 
 // Set how far the camera will be from the 3D model
-camera.position.z = objToRender === "3d" ? 10 : 500;
-camera.position.y = 5;
+camera.position.z = objToRender === "3d" ? 250 : 500;
+camera.position.y = 50;
 
 // Add lights to the scene, so we can actually see the 3D model
 const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
